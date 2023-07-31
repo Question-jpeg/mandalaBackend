@@ -29,12 +29,12 @@ def mandala(message: types.Message):
     chat_id = message.chat.id
     dateString = message.text
 
-    validator = r'^\d\d[ ]\d\d[ ]\d\d\d\d$'
+    validator = r'^\d\d[.]\d\d[.]\d\d\d\d$'
     is_match = bool(re.fullmatch(validator, dateString))
     is_valid = False
 
     if is_match:
-        day, month, year = [int(v) for v in dateString.split(' ')]
+        day, month, year = [int(v) for v in dateString.split('.')]
         is_valid = is_valid_date(day, month, year)
 
     if is_valid:

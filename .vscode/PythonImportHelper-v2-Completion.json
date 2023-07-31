@@ -411,7 +411,7 @@
         "kind": 2,
         "importPath": "bot.logic",
         "description": "bot.logic",
-        "peekOfCode": "def sum_digits(num):\n    return sum([int(n) for n in str(num)])\ndef createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace(' ', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):",
+        "peekOfCode": "def sum_digits(num):\n    return sum([int(n) for n in str(num)])\ndef createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace('.', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):",
         "detail": "bot.logic",
         "documentation": {}
     },
@@ -420,7 +420,7 @@
         "kind": 2,
         "importPath": "bot.logic",
         "description": "bot.logic",
-        "peekOfCode": "def createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace(' ', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):\n            summ = sequence[i] + sequence[i+1]\n            while len(str(summ)) != 1:                ",
+        "peekOfCode": "def createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace('.', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):\n            summ = sequence[i] + sequence[i+1]\n            while len(str(summ)) != 1:                ",
         "detail": "bot.logic",
         "documentation": {}
     },
@@ -429,7 +429,7 @@
         "kind": 2,
         "importPath": "bot.replyMessages",
         "description": "bot.replyMessages",
-        "peekOfCode": "def GREETINGS(name): \n    return f'Привет {name}! Введи свою дату рождения, чтобы получить мандалу! Пример даты: 04 04 2004'\nDATE_ERROR = 'Некорректная дата. Пример даты: 04 04 2004'",
+        "peekOfCode": "def GREETINGS(name): \n    return f'Привет {name}! Введи свою дату рождения, чтобы получить мандалу! Пример даты: 04.04.2004'\nDATE_ERROR = 'Некорректная дата. Пример даты: 04.04.2004'",
         "detail": "bot.replyMessages",
         "documentation": {}
     },
@@ -438,7 +438,7 @@
         "kind": 5,
         "importPath": "bot.replyMessages",
         "description": "bot.replyMessages",
-        "peekOfCode": "DATE_ERROR = 'Некорректная дата. Пример даты: 04 04 2004'",
+        "peekOfCode": "DATE_ERROR = 'Некорректная дата. Пример даты: 04.04.2004'",
         "detail": "bot.replyMessages",
         "documentation": {}
     },
@@ -474,7 +474,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[ ]\\d\\d[ ]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False",
+        "peekOfCode": "def start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -483,7 +483,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[ ]\\d\\d[ ]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:\n        day, month, year = [int(v) for v in dateString.split(' ')]\n        is_valid = is_valid_date(day, month, year)\n    if is_valid:",
+        "peekOfCode": "def mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:\n        day, month, year = [int(v) for v in dateString.split('.')]\n        is_valid = is_valid_date(day, month, year)\n    if is_valid:",
         "detail": "bot.views",
         "documentation": {}
     },

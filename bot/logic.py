@@ -5,7 +5,7 @@ def sum_digits(num):
 def createMatrix(date = ''):
     result = []
 
-    sequence = [int(s) for s in date.replace(' ', '')]
+    sequence = [int(s) for s in date.replace('.', '')]
     sequence = sequence + sequence[::-1]
 
     while len(sequence) != 0:
