@@ -1,0 +1,706 @@
+[
+    {
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "svg2png",
+        "importPath": "cairosvg",
+        "description": "cairosvg",
+        "isExtraImport": true,
+        "detail": "cairosvg",
+        "documentation": {}
+    },
+    {
+        "label": "TRIANGLE_HEIGHT",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "WIDTH",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "HEIGHT",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TN",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "INITIAL_ANGLE",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "SVG_SIZE",
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "isExtraImport": true,
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "COLORS",
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "isExtraImport": true,
+        "detail": "bot.config.values",
+        "documentation": {}
+    },
+    {
+        "label": "createMatrix",
+        "importPath": "bot.logic",
+        "description": "bot.logic",
+        "isExtraImport": true,
+        "detail": "bot.logic",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "TeleBot",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "replyMessages",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_date",
+        "importPath": "bot.utils",
+        "description": "bot.utils",
+        "isExtraImport": true,
+        "detail": "bot.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_image",
+        "importPath": "bot.getImage",
+        "description": "bot.getImage",
+        "isExtraImport": true,
+        "detail": "bot.getImage",
+        "documentation": {}
+    },
+    {
+        "label": "DATE_ERROR",
+        "importPath": "bot.replyMessages",
+        "description": "bot.replyMessages",
+        "isExtraImport": true,
+        "detail": "bot.replyMessages",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "N = 16\nTN = 6\nWIDTH = 18\nSCALE_Y = 1.73\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TN",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "TN = 6\nWIDTH = 18\nSCALE_Y = 1.73\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "WIDTH",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "WIDTH = 18\nSCALE_Y = 1.73\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "SCALE_Y",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "SCALE_Y = 1.73\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "HEIGHT",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "HEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TRIANGLE_WIDTH",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "TRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TRIANGLE_HEIGHT",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "TRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nSVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "SVG_SIZE",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "SVG_SIZE = 600\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "INITIAL_ANGLE",
+        "kind": 5,
+        "importPath": "bot.config.sizes",
+        "description": "bot.config.sizes",
+        "peekOfCode": "INITIAL_ANGLE = pi/2",
+        "detail": "bot.config.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "COLORS",
+        "kind": 5,
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "peekOfCode": "COLORS = {\n  0: {\n    'color': 'black',\n    'desc': \"Мандала не смогла определить. Вы являетесь настоящей загадкой для вселенной\",\n  },\n  1: {\n    'color': \"#CE1719\",\n    'desc': \"Динамизм, подвижность, хорошая карма, сострадательность, отзывчивость, любовь, радость и богатство. Вы способны на агрессию и обладание властью\",\n  },\n  2: {",
+        "detail": "bot.config.values",
+        "documentation": {}
+    },
+    {
+        "label": "BotConfig",
+        "kind": 6,
+        "importPath": "bot.apps",
+        "description": "bot.apps",
+        "peekOfCode": "class BotConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'bot'",
+        "detail": "bot.apps",
+        "documentation": {}
+    },
+    {
+        "label": "get_image",
+        "kind": 2,
+        "importPath": "bot.getImage",
+        "description": "bot.getImage",
+        "peekOfCode": "def get_image(date):\n    data = createMatrix(date)\n    matrix = data['matrix']\n    center = data['center']\n    offsetX = SVG_SIZE / 2\n    offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2\n    def generatePath(offsetX, offsetY, rowIndex, i):\n        color = COLORS[matrix[rowIndex][i]]['color']\n        return f'<path d=\"M {offsetX} {offsetY} L {offsetX+WIDTH/2} {offsetY+HEIGHT/2} L {offsetX} {offsetY+HEIGHT} L {offsetX-WIDTH/2} {offsetY+HEIGHT/2} Z\" fill=\"{color}\" />'\n    def generateSvg(i):",
+        "detail": "bot.getImage",
+        "documentation": {}
+    },
+    {
+        "label": "sum_digits",
+        "kind": 2,
+        "importPath": "bot.logic",
+        "description": "bot.logic",
+        "peekOfCode": "def sum_digits(num):\n    return sum([int(n) for n in str(num)])\ndef createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace(' ', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):",
+        "detail": "bot.logic",
+        "documentation": {}
+    },
+    {
+        "label": "createMatrix",
+        "kind": 2,
+        "importPath": "bot.logic",
+        "description": "bot.logic",
+        "peekOfCode": "def createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace(' ', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):\n            summ = sequence[i] + sequence[i+1]\n            while len(str(summ)) != 1:                ",
+        "detail": "bot.logic",
+        "documentation": {}
+    },
+    {
+        "label": "GREETINGS",
+        "kind": 2,
+        "importPath": "bot.replyMessages",
+        "description": "bot.replyMessages",
+        "peekOfCode": "def GREETINGS(name): \n    return f'Привет {name}! Введи свою дату рождения, чтобы получить мандалу! Пример даты: 04 04 2004'\nDATE_ERROR = 'Некорректная дата. Пример даты: 04 04 2004'",
+        "detail": "bot.replyMessages",
+        "documentation": {}
+    },
+    {
+        "label": "DATE_ERROR",
+        "kind": 5,
+        "importPath": "bot.replyMessages",
+        "description": "bot.replyMessages",
+        "peekOfCode": "DATE_ERROR = 'Некорректная дата. Пример даты: 04 04 2004'",
+        "detail": "bot.replyMessages",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "bot.urls",
+        "description": "bot.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', csrf_exempt(views.index), name='index'),\n]",
+        "detail": "bot.urls",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_date",
+        "kind": 2,
+        "importPath": "bot.utils",
+        "description": "bot.utils",
+        "peekOfCode": "def is_valid_date(day, month, year):\n    day_count_for_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]\n    if year%4==0 and (year%100 != 0 or year%400==0):\n        day_count_for_month[2] = 29\n    return (1 <= month <= 12 and 1 <= day <= day_count_for_month[month])",
+        "detail": "bot.utils",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[ ]\\d\\d[ ]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "mandala",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[ ]\\d\\d[ ]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:\n        day, month, year = [int(v) for v in dateString.split(' ')]\n        is_valid = is_valid_date(day, month, year)\n    if is_valid:",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "mandalaBackend.asgi",
+        "description": "mandalaBackend.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "mandalaBackend.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'bot',\n]\nMIDDLEWARE = [",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'mandalaBackend.urls'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "ROOT_URLCONF = 'mandalaBackend.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'mandalaBackend.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.1/howto/static-files/\nSTATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "mandalaBackend.settings",
+        "description": "mandalaBackend.settings",
+        "peekOfCode": "STATIC_ROOT = 'static/'",
+        "detail": "mandalaBackend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "mandalaBackend.settingsProd",
+        "description": "mandalaBackend.settingsProd",
+        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['7264-85-174-205-236.ngrok-free.app']",
+        "detail": "mandalaBackend.settingsProd",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "mandalaBackend.settingsProd",
+        "description": "mandalaBackend.settingsProd",
+        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['7264-85-174-205-236.ngrok-free.app']",
+        "detail": "mandalaBackend.settingsProd",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "mandalaBackend.settingsProd",
+        "description": "mandalaBackend.settingsProd",
+        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['7264-85-174-205-236.ngrok-free.app']",
+        "detail": "mandalaBackend.settingsProd",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "mandalaBackend.settingsProd",
+        "description": "mandalaBackend.settingsProd",
+        "peekOfCode": "ALLOWED_HOSTS = ['7264-85-174-205-236.ngrok-free.app']",
+        "detail": "mandalaBackend.settingsProd",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "mandalaBackend.urls",
+        "description": "mandalaBackend.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('bot.urls'))\n]",
+        "detail": "mandalaBackend.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "mandalaBackend.wsgi",
+        "description": "mandalaBackend.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "mandalaBackend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mandalaBackend.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

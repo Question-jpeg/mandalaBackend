@@ -1,0 +1,14 @@
+from math import pi
+
+N = 16
+TN = 6
+
+WIDTH = 18
+SCALE_Y = 1.73
+HEIGHT = WIDTH*SCALE_Y
+TRIANGLE_WIDTH = WIDTH * N
+TRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2
+
+SVG_SIZE = 600
+
+INITIAL_ANGLE = pi/2
