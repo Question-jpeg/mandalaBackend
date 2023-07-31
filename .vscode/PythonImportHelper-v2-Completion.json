@@ -402,7 +402,7 @@
         "kind": 2,
         "importPath": "bot.getImage",
         "description": "bot.getImage",
-        "peekOfCode": "def get_image(date):\n    data = createMatrix(date)\n    matrix = data['matrix']\n    center = data['center']\n    offsetX = SVG_SIZE / 2\n    offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2\n    def generatePath(offsetX, offsetY, rowIndex, i):\n        color = COLORS[matrix[rowIndex][i]]['color']\n        return f'<path d=\"M {offsetX} {offsetY} L {offsetX+WIDTH/2} {offsetY+HEIGHT/2} L {offsetX} {offsetY+HEIGHT} L {offsetX-WIDTH/2} {offsetY+HEIGHT/2} Z\" fill=\"{color}\" />'\n    def generateSvg(i):",
+        "peekOfCode": "def get_image(date):\n    data = createMatrix(date)\n    matrix = data['matrix']\n    centerText = COLORS[data['center']]['desc']\n    offsetX = SVG_SIZE / 2\n    offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2\n    def generatePath(offsetX, offsetY, rowIndex, i):\n        color = COLORS[matrix[rowIndex][i]]['color']\n        return f'<path d=\"M {offsetX} {offsetY} L {offsetX+WIDTH/2} {offsetY+HEIGHT/2} L {offsetX} {offsetY+HEIGHT} L {offsetX-WIDTH/2} {offsetY+HEIGHT/2} Z\" fill=\"{color}\" />'\n    def generateSvg(i):",
         "detail": "bot.getImage",
         "documentation": {}
     },

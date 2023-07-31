@@ -38,6 +38,7 @@ def mandala(message: types.Message):
         is_valid = is_valid_date(day, month, year)
 
     if is_valid:
-        bot.send_photo(chat_id, get_image(dateString))
+        imageData = get_image(dateString)
+        bot.send_photo(chat_id, imageData['image'], imageData['text'])
     else:
         bot.send_message(chat_id, DATE_ERROR)

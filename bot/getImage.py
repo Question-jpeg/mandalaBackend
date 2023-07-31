@@ -9,7 +9,7 @@ def get_image(date):
 
     data = createMatrix(date)
     matrix = data['matrix']
-    center = data['center']
+    centerText = COLORS[data['center']]['desc']
 
     offsetX = SVG_SIZE / 2
     offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2
@@ -41,4 +41,4 @@ def get_image(date):
         </svg>
     '''
 
-    return svg2png(bytestring=svg_code, background_color='black') # write_to can be removed
+    return {'image': svg2png(bytestring=svg_code, background_color='black'), 'text': centerText} # write_to can be removed
