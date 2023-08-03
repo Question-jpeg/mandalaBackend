@@ -3,7 +3,7 @@ from cairosvg import svg2png
 from bot.config.sizes import TRIANGLE_HEIGHT, WIDTH, HEIGHT, N, TN, INITIAL_ANGLE, SVG_SIZE
 from bot.config.values import COLORS
 from math import sin, cos, pi
-from bot.logic import createMatrix
+from bot.logic.createMatrix import createMatrix
 
 def get_image(date):
 

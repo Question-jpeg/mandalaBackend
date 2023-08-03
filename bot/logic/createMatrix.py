@@ -5,7 +5,7 @@ def sum_digits(num):
 def createMatrix(date = ''):
     result = []
 
-    sequence = [int(s) for s in date.replace('.', '')]
+    sequence = [int(s) for s in date]
     sequence = sequence + sequence[::-1]
 
     while len(sequence) != 0:
@@ -23,3 +23,13 @@ def createMatrix(date = ''):
     result.reverse()
 
     return {'matrix': result, 'center': result[0][0]}
+
+if __name__ == '__main__':
+    matrix = createMatrix('26031969')['matrix']
+    matrix.reverse()
+    for i in range(len(matrix)):
+        for elem in matrix[i]:
+
+            print(elem, end=' ')
+
+        print()

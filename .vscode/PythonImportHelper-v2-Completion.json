@@ -1,5 +1,37 @@
 [
     {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "TeleBot",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
         "label": "pi",
         "importPath": "math",
         "description": "math",
@@ -37,30 +69,6 @@
         "description": "math",
         "isExtraImport": true,
         "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -137,10 +145,34 @@
     },
     {
         "label": "createMatrix",
-        "importPath": "bot.logic",
-        "description": "bot.logic",
+        "importPath": "bot.logic.createMatrix",
+        "description": "bot.logic.createMatrix",
         "isExtraImport": true,
-        "detail": "bot.logic",
+        "detail": "bot.logic.createMatrix",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -192,22 +224,6 @@
         "documentation": {}
     },
     {
-        "label": "TeleBot",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
-        "label": "types",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -224,23 +240,6 @@
         "documentation": {}
     },
     {
-        "label": "replyMessages",
-        "importPath": "bot",
-        "description": "bot",
-        "isExtraImport": true,
-        "detail": "bot",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
         "label": "is_valid_date",
         "importPath": "bot.utils",
         "description": "bot.utils",
@@ -250,18 +249,50 @@
     },
     {
         "label": "get_image",
-        "importPath": "bot.getImage",
-        "description": "bot.getImage",
+        "importPath": "bot.logic.getImage",
+        "description": "bot.logic.getImage",
         "isExtraImport": true,
-        "detail": "bot.getImage",
+        "detail": "bot.logic.getImage",
         "documentation": {}
     },
     {
-        "label": "DATE_ERROR",
-        "importPath": "bot.replyMessages",
-        "description": "bot.replyMessages",
+        "label": "INSTRUCTION_PAGE_1",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
         "isExtraImport": true,
-        "detail": "bot.replyMessages",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_2",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "START_PAGE",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "LINKS",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
         "documentation": {}
     },
     {
@@ -304,6 +335,69 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "kind": 6,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "class Page:\n    reply_markup = None\n    def __init__(self, link, text, photo_file_id = None) -> None:\n        self.link = link\n        self.photo_file_id = photo_file_id\n        self.text = text\n    def get_text(self, message):\n        if isinstance(self.text, str):\n            return self.text\n        return self.text(message)",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "GREETINGS",
+        "kind": 2,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "def GREETINGS(message: types.Message):\n    return f'Привет {message.from_user.full_name}! Введи свою дату рождения без разделительных знаков, чтобы получить мандалу! Пример даты: 28042004'\nSTART_PAGE = Page(link='start', text=GREETINGS)\nINSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 ",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "START_PAGE",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "START_PAGE = Page(link='start', text=GREETINGS)\nINSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                ",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_1",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                \n2 6 0 3 1 9 6 9 9 6 9 1 3 0 6 2.",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_2",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_2 = Page(\n    link='inst_page_2',\n    text='Результат заполнения',\n    photo_file_id='AgACAgIAAxkBAAPsZMlV_8rCsTwlOTv2g5GMjppF3qwAAn7SMRsi-EhKROw5vmEK1kQBAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_3 = Page(\n    link='inst_page_3',\n    text='Распечатайте шаблон мандалы для последующей раскраски',\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_3",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_3 = Page(\n    link='inst_page_3',\n    text='Распечатайте шаблон мандалы для последующей раскраски',\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})\nINSTRUCTION_PAGE_2.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_1.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_3.link}})\nINSTRUCTION_PAGE_3.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_2.link}})\nLINKS = {\n    START_PAGE.link: START_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "LINKS",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "LINKS = {\n    START_PAGE.link: START_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,\n    INSTRUCTION_PAGE_2.link: INSTRUCTION_PAGE_2,\n    INSTRUCTION_PAGE_3.link: INSTRUCTION_PAGE_3\n}",
+        "detail": "bot.config.pages",
         "documentation": {}
     },
     {
@@ -397,57 +491,39 @@
         "documentation": {}
     },
     {
+        "label": "sum_digits",
+        "kind": 2,
+        "importPath": "bot.logic.createMatrix",
+        "description": "bot.logic.createMatrix",
+        "peekOfCode": "def sum_digits(num):\n    return sum([int(n) for n in str(num)])\ndef createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):",
+        "detail": "bot.logic.createMatrix",
+        "documentation": {}
+    },
+    {
+        "label": "createMatrix",
+        "kind": 2,
+        "importPath": "bot.logic.createMatrix",
+        "description": "bot.logic.createMatrix",
+        "peekOfCode": "def createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):\n            summ = sequence[i] + sequence[i+1]\n            while len(str(summ)) != 1:                ",
+        "detail": "bot.logic.createMatrix",
+        "documentation": {}
+    },
+    {
+        "label": "get_image",
+        "kind": 2,
+        "importPath": "bot.logic.getImage",
+        "description": "bot.logic.getImage",
+        "peekOfCode": "def get_image(date):\n    data = createMatrix(date)\n    matrix = data['matrix']\n    centerText = COLORS[data['center']]['desc']\n    offsetX = SVG_SIZE / 2\n    offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2\n    def generatePath(offsetX, offsetY, rowIndex, i):\n        color = COLORS[matrix[rowIndex][i]]['color']\n        return f'<path d=\"M {offsetX} {offsetY} L {offsetX+WIDTH/2} {offsetY+HEIGHT/2} L {offsetX} {offsetY+HEIGHT} L {offsetX-WIDTH/2} {offsetY+HEIGHT/2} Z\" fill=\"{color}\" />'\n    def generateSvg(i):",
+        "detail": "bot.logic.getImage",
+        "documentation": {}
+    },
+    {
         "label": "BotConfig",
         "kind": 6,
         "importPath": "bot.apps",
         "description": "bot.apps",
         "peekOfCode": "class BotConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'bot'",
         "detail": "bot.apps",
-        "documentation": {}
-    },
-    {
-        "label": "get_image",
-        "kind": 2,
-        "importPath": "bot.getImage",
-        "description": "bot.getImage",
-        "peekOfCode": "def get_image(date):\n    data = createMatrix(date)\n    matrix = data['matrix']\n    centerText = COLORS[data['center']]['desc']\n    offsetX = SVG_SIZE / 2\n    offsetY = SVG_SIZE / 2 - TRIANGLE_HEIGHT / 2\n    def generatePath(offsetX, offsetY, rowIndex, i):\n        color = COLORS[matrix[rowIndex][i]]['color']\n        return f'<path d=\"M {offsetX} {offsetY} L {offsetX+WIDTH/2} {offsetY+HEIGHT/2} L {offsetX} {offsetY+HEIGHT} L {offsetX-WIDTH/2} {offsetY+HEIGHT/2} Z\" fill=\"{color}\" />'\n    def generateSvg(i):",
-        "detail": "bot.getImage",
-        "documentation": {}
-    },
-    {
-        "label": "sum_digits",
-        "kind": 2,
-        "importPath": "bot.logic",
-        "description": "bot.logic",
-        "peekOfCode": "def sum_digits(num):\n    return sum([int(n) for n in str(num)])\ndef createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace('.', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):",
-        "detail": "bot.logic",
-        "documentation": {}
-    },
-    {
-        "label": "createMatrix",
-        "kind": 2,
-        "importPath": "bot.logic",
-        "description": "bot.logic",
-        "peekOfCode": "def createMatrix(date = ''):\n    result = []\n    sequence = [int(s) for s in date.replace('.', '')]\n    sequence = sequence + sequence[::-1]\n    while len(sequence) != 0:\n        result.append(sequence)\n        newSequence = []\n        for i in range(len(sequence)-1):\n            summ = sequence[i] + sequence[i+1]\n            while len(str(summ)) != 1:                ",
-        "detail": "bot.logic",
-        "documentation": {}
-    },
-    {
-        "label": "GREETINGS",
-        "kind": 2,
-        "importPath": "bot.replyMessages",
-        "description": "bot.replyMessages",
-        "peekOfCode": "def GREETINGS(name): \n    return f'Привет {name}! Введи свою дату рождения, чтобы получить мандалу! Пример даты: 04.04.2004'\nDATE_ERROR = 'Некорректная дата. Пример даты: 04.04.2004'",
-        "detail": "bot.replyMessages",
-        "documentation": {}
-    },
-    {
-        "label": "DATE_ERROR",
-        "kind": 5,
-        "importPath": "bot.replyMessages",
-        "description": "bot.replyMessages",
-        "peekOfCode": "DATE_ERROR = 'Некорректная дата. Пример даты: 04.04.2004'",
-        "detail": "bot.replyMessages",
         "documentation": {}
     },
     {
@@ -473,7 +549,34 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()",
+        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\n    else:",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_page",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\n    else:\n        bot.send_message(chat_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\ndef edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(types.InputMediaPhoto(page.photo_file_id, page.get_text(message), 'html'), chat_id, message.id, reply_markup=page.reply_markup)",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_page",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(types.InputMediaPhoto(page.photo_file_id, page.get_text(message), 'html'), chat_id, message.id, reply_markup=page.reply_markup)\n    else:\n        bot.edit_message_text(page.get_text(message), chat_id, message.id, reply_markup=page.reply_markup)\n@bot.message_handler(commands=['getFileID'])\ndef get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=['start'])",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_id",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=['instruction'])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -482,16 +585,25 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False",
+        "peekOfCode": "def start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=['instruction'])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)",
         "detail": "bot.views",
         "documentation": {}
     },
     {
-        "label": "mandala",
+        "label": "instruction",
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:\n        day, month, year = [int(v) for v in dateString.split('.')]\n        is_valid = is_valid_date(day, month, year)\n    if is_valid:",
+        "peekOfCode": "def instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n# @bot.message_handler()\n# def mandala(message: types.Message):\n#     chat_id = message.chat.id",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "handle_callback",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n# @bot.message_handler()\n# def mandala(message: types.Message):\n#     chat_id = message.chat.id\n#     dateString = message.text\n#     validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n#     is_match = bool(re.fullmatch(validator, dateString))",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -500,7 +612,7 @@
         "kind": 5,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    name = message.from_user.full_name\n    bot.send_message(message.chat.id, replyMessages.GREETINGS(name))",
+        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -653,7 +765,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['5f1f-85-174-205-236.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -662,7 +774,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['5f1f-85-174-205-236.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -671,7 +783,16 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nALLOWED_HOSTS = ['5f1f-85-174-205-236.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "detail": "mandalaBackend.settingsProd",
+        "documentation": {}
+    },
+    {
+        "label": "PAYMENTS_TOKEN",
+        "kind": 5,
+        "importPath": "mandalaBackend.settingsProd",
+        "description": "mandalaBackend.settingsProd",
+        "peekOfCode": "PAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -680,7 +801,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "ALLOWED_HOSTS = ['5f1f-85-174-205-236.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "ALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
