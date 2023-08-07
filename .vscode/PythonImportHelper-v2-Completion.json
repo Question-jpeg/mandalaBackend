@@ -80,6 +80,22 @@
         "documentation": {}
     },
     {
+        "label": "FULL_PRICE",
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "isExtraImport": true,
+        "detail": "bot.config.values",
+        "documentation": {}
+    },
+    {
+        "label": "SVG_PRICE",
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "isExtraImport": true,
+        "detail": "bot.config.values",
+        "documentation": {}
+    },
+    {
         "label": "svg2png",
         "importPath": "cairosvg",
         "description": "cairosvg",
@@ -273,6 +289,22 @@
         "documentation": {}
     },
     {
+        "label": "LINKS",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "START_PAGE",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
         "label": "EXAMPLES_PAGE",
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
@@ -289,7 +321,7 @@
         "documentation": {}
     },
     {
-        "label": "LINKS",
+        "label": "BUY_PAGE",
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
         "isExtraImport": true,
@@ -305,7 +337,7 @@
         "documentation": {}
     },
     {
-        "label": "START_PAGE",
+        "label": "PageTypes",
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
         "isExtraImport": true,
@@ -319,14 +351,6 @@
         "importPath": "bot.config.botMessages",
         "description": "bot.config.botMessages",
         "detail": "bot.config.botMessages",
-        "documentation": {}
-    },
-    {
-        "label": "PRICES",
-        "importPath": "bot.config.values",
-        "description": "bot.config.values",
-        "isExtraImport": true,
-        "detail": "bot.config.values",
         "documentation": {}
     },
     {
@@ -466,8 +490,35 @@
         "kind": 5,
         "importPath": "bot.config.botMessages",
         "description": "bot.config.botMessages",
-        "peekOfCode": "DATE_ERROR = \"\"\"\nНекорректный ввод даты. Пример ввода даты: 26031969\n(Число, Месяц и Год без разделительных знаков)\"\"\"",
+        "peekOfCode": "DATE_ERROR = \"\"\"\nНекорректный ввод даты. Пример ввода даты: 26031969\n(Число, Месяц и Год без разделительных знаков)\"\"\"\nSUCCESSFUL_PAYMENT = \"Отлично! Теперь введите вашу дату рождения без разделительных знаков. Пример: 26031969\"\nHELP = 'Для навигации воспользуйтесь меню'",
         "detail": "bot.config.botMessages",
+        "documentation": {}
+    },
+    {
+        "label": "SUCCESSFUL_PAYMENT",
+        "kind": 5,
+        "importPath": "bot.config.botMessages",
+        "description": "bot.config.botMessages",
+        "peekOfCode": "SUCCESSFUL_PAYMENT = \"Отлично! Теперь введите вашу дату рождения без разделительных знаков. Пример: 26031969\"\nHELP = 'Для навигации воспользуйтесь меню'",
+        "detail": "bot.config.botMessages",
+        "documentation": {}
+    },
+    {
+        "label": "HELP",
+        "kind": 5,
+        "importPath": "bot.config.botMessages",
+        "description": "bot.config.botMessages",
+        "peekOfCode": "HELP = 'Для навигации воспользуйтесь меню'",
+        "detail": "bot.config.botMessages",
+        "documentation": {}
+    },
+    {
+        "label": "PageTypes",
+        "kind": 6,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "class PageTypes:\n    TEXT = 0\n    PHOTO = 1\n    MEDIA_GROUP = 2\n    INVOICE = 3\nclass Page:\n    type = PageTypes.TEXT\n    reply_markup = None\n    def __init__(self, link, text):\n        self.link = link",
+        "detail": "bot.config.pages",
         "documentation": {}
     },
     {
@@ -475,16 +526,34 @@
         "kind": 6,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "class Page:\n    reply_markup = None\n    def __init__(self, link, text, photo_file_id = None, photo_file_ids = None) -> None:\n        self.link = link\n        self.photo_file_id = photo_file_id\n        self.photo_file_ids = photo_file_ids\n        self.text = text\n    def get_text(self, message):\n        if isinstance(self.text, str):\n            return self.text",
+        "peekOfCode": "class Page:\n    type = PageTypes.TEXT\n    reply_markup = None\n    def __init__(self, link, text):\n        self.link = link\n        self.text = text\n    def get_text(self, message):\n        if isinstance(self.text, str):\n            return self.text\n        return self.text(message)",
         "detail": "bot.config.pages",
         "documentation": {}
     },
     {
-        "label": "GREETINGS",
-        "kind": 2,
+        "label": "PhotoPage",
+        "kind": 6,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "def GREETINGS(message: types.Message):\n    return f\"\"\"\nЗдравствуйте, {message.from_user.full_name}!\nВ этом боте вы можете:\n1⃣ Сделать свою мандалу по дате рождения самостоятельно\n2⃣ Приобрести мандалу\n3⃣ Посмотреть примеры готовых мандал\nДля навигации используйте меню\n\"\"\"\nSTART_PAGE = Page(",
+        "peekOfCode": "class PhotoPage(Page):\n    type = PageTypes.PHOTO\n    def __init__(self, link, text, photo_file_id):\n        super().__init__(link, text)\n        self.photo_file_id = photo_file_id\nclass MediaGroupPage(Page):\n    type = PageTypes.MEDIA_GROUP\n    def __init__(self, link, text, photo_file_ids):\n        super().__init__(link, text)\n        self.photo_file_ids = photo_file_ids",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "MediaGroupPage",
+        "kind": 6,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "class MediaGroupPage(Page):\n    type = PageTypes.MEDIA_GROUP\n    def __init__(self, link, text, photo_file_ids):\n        super().__init__(link, text)\n        self.photo_file_ids = photo_file_ids\nclass InvoicePage(Page):\n    type = PageTypes.INVOICE\n    def __init__(self, link, title, text, price: types.LabeledPrice):\n        super().__init__(link, text)\n        self.title = title",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "InvoicePage",
+        "kind": 6,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "class InvoicePage(Page):\n    type = PageTypes.INVOICE\n    def __init__(self, link, title, text, price: types.LabeledPrice):\n        super().__init__(link, text)\n        self.title = title\n        self.price = price\nSTART_PAGE = PhotoPage(\n    link=\"start\",\n    text=\"\"\"\nЗдравствуйте!",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -493,7 +562,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "START_PAGE = Page(\n    link='start', \n    text=GREETINGS,\n    photo_file_id='AgACAgIAAxkDAAIBOmTMkRV9e6eYqnBfwolPOkLOrfMjAAJ0xzEbmbtBSpfb019kAAGBdAEAAwIAA3MAAy8E'\n)\nEXAMPLES_PAGE = Page(\n    link='ex_page',\n    text='Примеры готовых мандал',\n    photo_file_ids=[\n        'AgACAgIAAxkDAAIBVWTMl4vXuhVU0GmcwHECQ81P01tzAAJN0TEb5RlgSgV-sltK2xWIAQADAgADcwADLwQ',",
+        "peekOfCode": "START_PAGE = PhotoPage(\n    link=\"start\",\n    text=\"\"\"\nЗдравствуйте!\nВ этом боте вы можете:\n1⃣ Сделать свою мандалу по дате рождения самостоятельно\n2⃣ Приобрести мандалу\n3⃣ Посмотреть примеры готовых мандал\nДля навигации используйте меню\n\"\"\",",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -502,7 +571,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "EXAMPLES_PAGE = Page(\n    link='ex_page',\n    text='Примеры готовых мандал',\n    photo_file_ids=[\n        'AgACAgIAAxkDAAIBVWTMl4vXuhVU0GmcwHECQ81P01tzAAJN0TEb5RlgSgV-sltK2xWIAQADAgADcwADLwQ',\n        'AgACAgIAAxkDAAIBWWTMl7wb5Xgvfl8X9JZiknmstH7QAAJO0TEb5RlgSqL5B7Y3t17aAQADAgADcwADLwQ',\n        'AgACAgIAAxkDAAIBXWTMl-bx1OZC9Hjcw9v08U-jQbJ_AAJQ0TEb5RlgSlyr3LNGlaTBAQADAgADcwADLwQ'\n    ]\n)\nINSTRUCTION_PAGE_1 = Page(",
+        "peekOfCode": "EXAMPLES_PAGE = MediaGroupPage(\n    link=\"ex_page\",\n    text=\"Примеры готовых мандал\",\n    photo_file_ids=[\n        \"AgACAgIAAxkDAAIBVWTMl4vXuhVU0GmcwHECQ81P01tzAAJN0TEb5RlgSgV-sltK2xWIAQADAgADcwADLwQ\",\n        \"AgACAgIAAxkDAAIBWWTMl7wb5Xgvfl8X9JZiknmstH7QAAJO0TEb5RlgSqL5B7Y3t17aAQADAgADcwADLwQ\",\n        \"AgACAgIAAxkDAAIBXWTMl-bx1OZC9Hjcw9v08U-jQbJ_AAJQ0TEb5RlgSlyr3LNGlaTBAQADAgADcwADLwQ\",\n    ],\n)\nINSTRUCTION_PAGE_1 = PhotoPage(",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -511,7 +580,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_1 = Page(\n    link='inst_page_3',\n    text='Распечатайте чистую мандалу, которую в дальнейшем будете закрашивать. Для удобства можете скачать её у нас.',\n    photo_file_id='AgACAgIAAxkBAAIBHWTMiLNMuguWJIAGPH5WuN_72bNSAAPRMRvlGWBKikQu6xuHZzABAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_2 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.",
+        "peekOfCode": "INSTRUCTION_PAGE_1 = PhotoPage(\n    link=\"inst_page_3\",\n    text=\"Распечатайте чистую мандалу, которую в дальнейшем будете закрашивать. Для удобства можете скачать её у нас.\",\n    photo_file_id=\"AgACAgIAAxkBAAIBHWTMiLNMuguWJIAGPH5WuN_72bNSAAPRMRvlGWBKikQu6xuHZzABAAMCAANzAAMvBA\",\n)\nINSTRUCTION_PAGE_2 = PhotoPage(\n    link=\"inst_page_1\",\n    text=\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: ",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -520,7 +589,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_2 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                \n2 6 0 3 1 9 6 9 9 6 9 1 3 0 6 2.",
+        "peekOfCode": "INSTRUCTION_PAGE_2 = PhotoPage(\n    link=\"inst_page_1\",\n    text=\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                \n2 6 0 3 1 9 6 9 9 6 9 1 3 0 6 2.\nВпоследствии это также позволит сделать более наглядным наш цифровой треугольник.",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -529,7 +598,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_3 = Page(\n    link='inst_page_2',\n    text='Результат заполнения',\n    photo_file_id='AgACAgIAAxkBAAPsZMlV_8rCsTwlOTv2g5GMjppF3qwAAn7SMRsi-EhKROw5vmEK1kQBAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_4 = Page(\n    link='inst_page_4',\n    text=\n\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.",
+        "peekOfCode": "INSTRUCTION_PAGE_3 = PhotoPage(\n    link=\"inst_page_2\",\n    text=\"Результат заполнения\",\n    photo_file_id=\"AgACAgIAAxkBAAPsZMlV_8rCsTwlOTv2g5GMjppF3qwAAn7SMRsi-EhKROw5vmEK1kQBAAMCAANzAAMvBA\",\n)\nINSTRUCTION_PAGE_4 = PhotoPage(\n    link=\"inst_page_4\",\n    text=\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.\nЗакрасьте именно такими цветами каждую ячейку в треугольном сегменте мандалы (сегментов 6 и они одинаковые). ",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -538,7 +607,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_4 = Page(\n    link='inst_page_4',\n    text=\n\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.\nЗакрасьте именно такими цветами каждую ячейку в треугольном сегменте мандалы (сегментов 6 и они одинаковые). \nВ нашем случае последовательность 2603196996913062 будет соответствовать внешней стороне шестиугольника, а цифра 4 будет находиться в самой серединке.\n\"\"\",\nphoto_file_id='AgACAgIAAxkBAAIBImTMiwXUNZZhh4LgQxO2TAZwg_EnAAII0TEb5RlgSiJd_MS2dL2tAQADAgADcwADLwQ'\n)",
+        "peekOfCode": "INSTRUCTION_PAGE_4 = PhotoPage(\n    link=\"inst_page_4\",\n    text=\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.\nЗакрасьте именно такими цветами каждую ячейку в треугольном сегменте мандалы (сегментов 6 и они одинаковые). \nВ нашем случае последовательность 2603196996913062 будет соответствовать внешней стороне шестиугольника, а цифра 4 будет находиться в самой серединке.\n\"\"\",\n    photo_file_id=\"AgACAgIAAxkBAAIBImTMiwXUNZZhh4LgQxO2TAZwg_EnAAII0TEb5RlgSiJd_MS2dL2tAQADAgADcwADLwQ\",\n)\nINSTRUCTION_PAGE_5 = PhotoPage(",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -547,7 +616,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_5 = Page(\n    link='inst_page_5',\n    text='Закрашенный сегмент (всего 6)',\n    photo_file_id='AgACAgIAAxkBAAIB12TM4BwvipUY1DlYGF6ktKTufEMYAAJMzDEbLllpSsvU-angI0VuAQADAgADcwADLwQ'\n)\nINSTRUCTION_PAGE_6 = Page(\n    link='inst_page_6',\n    text='Готовая мандала',\n    photo_file_id='AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ'\n)",
+        "peekOfCode": "INSTRUCTION_PAGE_5 = PhotoPage(\n    link=\"inst_page_5\",\n    text=\"Закрашенный сегмент (всего 6)\",\n    photo_file_id=\"AgACAgIAAxkBAAIB12TM4BwvipUY1DlYGF6ktKTufEMYAAJMzDEbLllpSsvU-angI0VuAQADAgADcwADLwQ\",\n)\nINSTRUCTION_PAGE_6 = PhotoPage(\n    link=\"inst_page_6\",\n    text=\"Готовая мандала\",\n    photo_file_id=\"AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ\",\n)",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -556,7 +625,34 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_6 = Page(\n    link='inst_page_6',\n    text='Готовая мандала',\n    photo_file_id='AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ'\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})\nINSTRUCTION_PAGE_2.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_1.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_3.link}})\nINSTRUCTION_PAGE_3.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_2.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_4.link}})\nINSTRUCTION_PAGE_4.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_3.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_5.link}})\nINSTRUCTION_PAGE_5.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_4.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_6.link}})",
+        "peekOfCode": "INSTRUCTION_PAGE_6 = PhotoPage(\n    link=\"inst_page_6\",\n    text=\"Готовая мандала\",\n    photo_file_id=\"AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ\",\n)\nBUY_PAGE = Page(link=\"buy_page\", text=\"Приобрести мандалу:\")\nINVOICE_PAGE_SVG = InvoicePage(\n    link=\"invoice_svg\",\n    title=\"Мандала без описания\",\n    text=\"Вы получите только рисунок\",",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "BUY_PAGE",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "BUY_PAGE = Page(link=\"buy_page\", text=\"Приобрести мандалу:\")\nINVOICE_PAGE_SVG = InvoicePage(\n    link=\"invoice_svg\",\n    title=\"Мандала без описания\",\n    text=\"Вы получите только рисунок\",\n    price=SVG_PRICE,\n)\nINVOICE_PAGE_FULL = InvoicePage(\n    link=\"invoice_full\",\n    title=\"Мандала с полным описанием\",",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INVOICE_PAGE_SVG",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INVOICE_PAGE_SVG = InvoicePage(\n    link=\"invoice_svg\",\n    title=\"Мандала без описания\",\n    text=\"Вы получите только рисунок\",\n    price=SVG_PRICE,\n)\nINVOICE_PAGE_FULL = InvoicePage(\n    link=\"invoice_full\",\n    title=\"Мандала с полным описанием\",\n    text=\"Вы получите рисунок с подробным описанием его значения\",",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INVOICE_PAGE_FULL",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INVOICE_PAGE_FULL = InvoicePage(\n    link=\"invoice_full\",\n    title=\"Мандала с полным описанием\",\n    text=\"Вы получите рисунок с подробным описанием его значения\",\n    price=FULL_PRICE,\n)\nINSTRUCTION_PAGE_1.set_reply_markup(\n    {\"Далее\": {\"callback_data\": INSTRUCTION_PAGE_2.link}}\n)\nINSTRUCTION_PAGE_2.set_reply_markup(",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -565,16 +661,25 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "LINKS = {\n    START_PAGE.link: START_PAGE,\n    EXAMPLES_PAGE.link: EXAMPLES_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,\n    INSTRUCTION_PAGE_2.link: INSTRUCTION_PAGE_2,\n    INSTRUCTION_PAGE_3.link: INSTRUCTION_PAGE_3,\n    INSTRUCTION_PAGE_4.link: INSTRUCTION_PAGE_4,\n    INSTRUCTION_PAGE_5.link: INSTRUCTION_PAGE_5,\n    INSTRUCTION_PAGE_6.link: INSTRUCTION_PAGE_6\n}",
+        "peekOfCode": "LINKS = {\n    START_PAGE.link: START_PAGE,\n    EXAMPLES_PAGE.link: EXAMPLES_PAGE,\n    #\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,\n    INSTRUCTION_PAGE_2.link: INSTRUCTION_PAGE_2,\n    INSTRUCTION_PAGE_3.link: INSTRUCTION_PAGE_3,\n    INSTRUCTION_PAGE_4.link: INSTRUCTION_PAGE_4,\n    INSTRUCTION_PAGE_5.link: INSTRUCTION_PAGE_5,\n    INSTRUCTION_PAGE_6.link: INSTRUCTION_PAGE_6,",
         "detail": "bot.config.pages",
         "documentation": {}
     },
     {
-        "label": "PRICES",
+        "label": "SVG_PRICE",
         "kind": 5,
         "importPath": "bot.config.values",
         "description": "bot.config.values",
-        "peekOfCode": "PRICES = [types.LabeledPrice('Мандала', 5000), types.LabeledPrice('Мандала с описанием', 15000)]",
+        "peekOfCode": "SVG_PRICE = types.LabeledPrice('Мандала без описания', 6000)\nFULL_PRICE = types.LabeledPrice('Мандала с описанием', 15000)",
+        "detail": "bot.config.values",
+        "documentation": {}
+    },
+    {
+        "label": "FULL_PRICE",
+        "kind": 5,
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "peekOfCode": "FULL_PRICE = types.LabeledPrice('Мандала с описанием', 15000)",
         "detail": "bot.config.values",
         "documentation": {}
     },
@@ -637,7 +742,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(\n            chat_id,",
+        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.type == PageTypes.PHOTO:\n        bot.send_photo(\n            chat_id,",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -646,16 +751,25 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(\n            chat_id,\n            page.photo_file_id,\n            page.get_text(message),\n            \"html\",\n            reply_markup=page.reply_markup,\n        )",
+        "peekOfCode": "def send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.type == PageTypes.PHOTO:\n        bot.send_photo(\n            chat_id,\n            page.photo_file_id,\n            page.get_text(message),\n            \"html\",\n            reply_markup=page.reply_markup,\n        )",
         "detail": "bot.views",
         "documentation": {}
     },
     {
-        "label": "edit_page",
+        "label": "handle_callback_page",
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(\n            types.InputMediaPhoto(page.photo_file_id, page.get_text(message), \"html\"),\n            chat_id,\n            message.id,\n            reply_markup=page.reply_markup,\n        )\n    else:",
+        "peekOfCode": "def handle_callback_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.type == PageTypes.PHOTO:\n        bot.edit_message_media(\n            types.InputMediaPhoto(page.photo_file_id, page.get_text(message), \"html\"),\n            chat_id,\n            message.id,\n            reply_markup=page.reply_markup,\n        )\n    elif page.type == PageTypes.TEXT:",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "handle_callback",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    handle_callback_page(LINKS[link], message)\n@bot.message_handler(commands=[\"getFileID\"])\ndef get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=[\"start\"])\ndef start(message: types.Message):\n    send_page(START_PAGE, message)",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -673,7 +787,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=[\"examples\"])\ndef examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):",
+        "peekOfCode": "def start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=[\"examples\"])\ndef examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n@bot.message_handler(commands=[\"buy\"])\ndef buy(message: types.Message):",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -682,7 +796,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):\n#     bot.send_invoice(message.chat.id, title='Working Time Machine',\n#                      provider_token=settings.PAYMENTS_TOKEN,\n#                      currency='rub',                     ",
+        "peekOfCode": "def examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n@bot.message_handler(commands=[\"buy\"])\ndef buy(message: types.Message):\n    send_page(BUY_PAGE, message)\n@bot.pre_checkout_query_handler(func=lambda query: True)\ndef checkout(pre_checkout_query):",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -691,16 +805,34 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):\n#     bot.send_invoice(message.chat.id, title='Working Time Machine',\n#                      provider_token=settings.PAYMENTS_TOKEN,\n#                      currency='rub',                     \n#                      need_shipping_address=False,\n#                      need_name=False,\n#                      need_phone_number=False,",
+        "peekOfCode": "def instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n@bot.message_handler(commands=[\"buy\"])\ndef buy(message: types.Message):\n    send_page(BUY_PAGE, message)\n@bot.pre_checkout_query_handler(func=lambda query: True)\ndef checkout(pre_checkout_query):\n    bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,\n                                  error_message=\"Возникла проблема, попробуйте позднее\")                                  \n@bot.message_handler(content_types=['successful_payment'])",
         "detail": "bot.views",
         "documentation": {}
     },
     {
-        "label": "handle_callback",
+        "label": "buy",
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r\"^\\d\\d\\d\\d\\d\\d\\d\\d$\"\n    is_match = bool(re.fullmatch(validator, dateString))",
+        "peekOfCode": "def buy(message: types.Message):\n    send_page(BUY_PAGE, message)\n@bot.pre_checkout_query_handler(func=lambda query: True)\ndef checkout(pre_checkout_query):\n    bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,\n                                  error_message=\"Возникла проблема, попробуйте позднее\")                                  \n@bot.message_handler(content_types=['successful_payment'])\ndef got_payment(message: types.Message):\n    sent = bot.send_message(message.chat.id, BOT_MESSAGES.SUCCESSFUL_PAYMENT)\n    bot.register_next_step_handler(sent, mandala)",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "checkout",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def checkout(pre_checkout_query):\n    bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,\n                                  error_message=\"Возникла проблема, попробуйте позднее\")                                  \n@bot.message_handler(content_types=['successful_payment'])\ndef got_payment(message: types.Message):\n    sent = bot.send_message(message.chat.id, BOT_MESSAGES.SUCCESSFUL_PAYMENT)\n    bot.register_next_step_handler(sent, mandala)\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "got_payment",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def got_payment(message: types.Message):\n    sent = bot.send_message(message.chat.id, BOT_MESSAGES.SUCCESSFUL_PAYMENT)\n    bot.register_next_step_handler(sent, mandala)\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r\"^\\d\\d\\d\\d\\d\\d\\d\\d$\"\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -714,11 +846,20 @@
         "documentation": {}
     },
     {
+        "label": "handle_none",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def handle_none(message: types.Message):\n    bot.send_message(message.chat.id, BOT_MESSAGES.HELP)",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
         "label": "bot",
         "kind": 5,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(",
+        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.type == PageTypes.PHOTO:\n        bot.send_photo(",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -871,7 +1012,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "SECRET_KEY = '*yjk1d^6nmihmfv2gaupw!d@+54up+jzk$nni1l9ukw#zb)n+p'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENT_PROVIDER_TOKEN = '381764678:TEST:63379'\n# '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['6b68-91-219-189-204.ngrok.io', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -880,7 +1021,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENT_PROVIDER_TOKEN = '381764678:TEST:63379'\n# '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['6b68-91-219-189-204.ngrok.io', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -889,16 +1030,16 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENT_PROVIDER_TOKEN = '381764678:TEST:63379'\n# '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['6b68-91-219-189-204.ngrok.io', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
     {
-        "label": "PAYMENTS_TOKEN",
+        "label": "PAYMENT_PROVIDER_TOKEN",
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "PAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "PAYMENT_PROVIDER_TOKEN = '381764678:TEST:63379'\n# '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['6b68-91-219-189-204.ngrok.io', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -907,7 +1048,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "ALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "ALLOWED_HOSTS = ['6b68-91-219-189-204.ngrok.io', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },

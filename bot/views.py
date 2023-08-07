@@ -5,14 +5,15 @@ from django.http import HttpResponse
 from bot.utils import is_valid_date
 from bot.logic.getImage import get_image
 from bot.config.pages import (
+    LINKS,
+    START_PAGE,
     EXAMPLES_PAGE,
     INSTRUCTION_PAGE_1,
-    LINKS,
+    BUY_PAGE,
     Page,
-    START_PAGE,
+    PageTypes,
 )
 import bot.config.botMessages as BOT_MESSAGES
-from bot.config.values import PRICES
 
 bot = TeleBot(settings.BOT_TOKEN)
 
@@ -28,7 +29,7 @@ def index(request):
 def send_page(page: Page, message: types.Message):
     chat_id = message.chat.id
 
-    if page.photo_file_id:
+    if page.type == PageTypes.PHOTO:
         bot.send_photo(
             chat_id,
             page.photo_file_id,
@@ -36,7 +37,7 @@ def send_page(page: Page, message: types.Message):
             "html",
             reply_markup=page.reply_markup,
         )
-    elif page.photo_file_ids:
+    elif page.type == PageTypes.MEDIA_GROUP:
         bot.send_media_group(
             chat_id,
             [
@@ -48,27 +49,47 @@ def send_page(page: Page, message: types.Message):
                 for i in range(len(page.photo_file_ids))
             ],
         )
+    elif page.type == PageTypes.INVOICE:
+        bot.send_invoice(
+            chat_id=chat_id,
+            title=page.title,
+            description=page.get_text(message),
+            invoice_payload="invoice",
+            provider_token=settings.PAYMENT_PROVIDER_TOKEN,
+            currency="RUB",
+            prices=[page.price],
+
+        )
     else:
         bot.send_message(
             chat_id, page.get_text(message), "html", reply_markup=page.reply_markup
         )
 
 
-def edit_page(page: Page, message: types.Message):
+def handle_callback_page(page: Page, message: types.Message):
     chat_id = message.chat.id
 
-    if page.photo_file_id:
+    if page.type == PageTypes.PHOTO:
         bot.edit_message_media(
             types.InputMediaPhoto(page.photo_file_id, page.get_text(message), "html"),
             chat_id,
             message.id,
             reply_markup=page.reply_markup,
         )
-    else:
+    elif page.type == PageTypes.TEXT:
         bot.edit_message_text(
             page.get_text(message), chat_id, message.id, reply_markup=page.reply_markup
         )
+    else:
+        send_page(page, message)
 
+
+@bot.callback_query_handler(lambda q: True)
+def handle_callback(query: types.CallbackQuery):
+    link = query.data
+    message = query.message
+
+    handle_callback_page(LINKS[link], message)
 
 @bot.message_handler(commands=["getFileID"])
 def get_file_id(message: types.Message):
@@ -89,29 +110,22 @@ def examples(message: types.Message):
 def instruction(message: types.Message):
     send_page(INSTRUCTION_PAGE_1, message)
 
-# @bot.message_handler(commands=['buy'])
-# def buy(message: types.Message):
-#     bot.send_invoice(message.chat.id, title='Working Time Machine',
-#                      provider_token=settings.PAYMENTS_TOKEN,
-#                      currency='rub',                     
-#                      need_shipping_address=False,
-#                      need_name=False,
-#                      need_phone_number=False,
-#                      is_flexible=False,  # True If you need to set up Shipping Fee
-#                      prices=PRICES,
-#                      start_parameter='time-machine-example',
-#                      invoice_payload='HAPPY FRIDAYS COUPON')
+
+@bot.message_handler(commands=["buy"])
+def buy(message: types.Message):
+    send_page(BUY_PAGE, message)
+
+@bot.pre_checkout_query_handler(func=lambda query: True)
+def checkout(pre_checkout_query):
+    bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True,
+                                  error_message="Возникла проблема, попробуйте позднее")                                  
+
+@bot.message_handler(content_types=['successful_payment'])
+def got_payment(message: types.Message):
+    sent = bot.send_message(message.chat.id, BOT_MESSAGES.SUCCESSFUL_PAYMENT)
+    bot.register_next_step_handler(sent, mandala)
 
 
-@bot.callback_query_handler(lambda q: True)
-def handle_callback(query: types.CallbackQuery):
-    link = query.data
-    message = query.message
-
-    edit_page(LINKS[link], message)
-
-
-@bot.message_handler()
 def mandala(message: types.Message):
     chat_id = message.chat.id
     dateString = message.text
@@ -128,6 +142,12 @@ def mandala(message: types.Message):
 
     if is_valid:
         imageData = get_image(dateString)
-        bot.send_photo(chat_id, imageData["image"], imageData["text"])
+        bot.send_photo(chat_id, imageData["image"])
     else:
-        bot.send_message(chat_id, BOT_MESSAGES.DATE_ERROR)
+        sent = bot.send_message(chat_id, BOT_MESSAGES.DATE_ERROR)
+        bot.register_next_step_handler(sent, mandala)
+
+
+@bot.message_handler()
+def handle_none(message: types.Message):
+    bot.send_message(message.chat.id, BOT_MESSAGES.HELP)
