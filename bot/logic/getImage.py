@@ -1,7 +1,7 @@
 from cairosvg import svg2png
 
-from bot.config.sizes import TRIANGLE_HEIGHT, WIDTH, HEIGHT, N, TN, INITIAL_ANGLE, SVG_SIZE
-from bot.config.values import COLORS
+from bot.config.render.sizes import TRIANGLE_HEIGHT, WIDTH, HEIGHT, N, TN, INITIAL_ANGLE, SVG_SIZE
+from bot.config.render.values import COLORS
 from math import sin, cos, pi
 from bot.logic.createMatrix import createMatrix
 

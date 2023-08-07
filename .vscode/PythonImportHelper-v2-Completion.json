@@ -1,37 +1,5 @@
 [
     {
-        "label": "types",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
-        "label": "util",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
-        "label": "TeleBot",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
-        "label": "types",
-        "importPath": "telebot",
-        "description": "telebot",
-        "isExtraImport": true,
-        "detail": "telebot",
-        "documentation": {}
-    },
-    {
         "label": "pi",
         "importPath": "math",
         "description": "math",
@@ -72,6 +40,46 @@
         "documentation": {}
     },
     {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "util",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "TeleBot",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "telebot",
+        "description": "telebot",
+        "isExtraImport": true,
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
         "label": "svg2png",
         "importPath": "cairosvg",
         "description": "cairosvg",
@@ -81,66 +89,66 @@
     },
     {
         "label": "TRIANGLE_HEIGHT",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "WIDTH",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "HEIGHT",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "N",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "TN",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "INITIAL_ANGLE",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "SVG_SIZE",
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
         "isExtraImport": true,
-        "detail": "bot.config.sizes",
+        "detail": "bot.config.render.sizes",
         "documentation": {}
     },
     {
         "label": "COLORS",
-        "importPath": "bot.config.values",
-        "description": "bot.config.values",
+        "importPath": "bot.config.render.values",
+        "description": "bot.config.render.values",
         "isExtraImport": true,
-        "detail": "bot.config.values",
+        "detail": "bot.config.render.values",
         "documentation": {}
     },
     {
@@ -224,6 +232,15 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -256,6 +273,14 @@
         "documentation": {}
     },
     {
+        "label": "EXAMPLES_PAGE",
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "isExtraImport": true,
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
         "label": "INSTRUCTION_PAGE_1",
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
@@ -264,7 +289,7 @@
         "documentation": {}
     },
     {
-        "label": "INSTRUCTION_PAGE_2",
+        "label": "LINKS",
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
         "isExtraImport": true,
@@ -288,11 +313,20 @@
         "documentation": {}
     },
     {
-        "label": "LINKS",
-        "importPath": "bot.config.pages",
-        "description": "bot.config.pages",
+        "label": "bot.config.botMessages",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "bot.config.pages",
+        "importPath": "bot.config.botMessages",
+        "description": "bot.config.botMessages",
+        "detail": "bot.config.botMessages",
+        "documentation": {}
+    },
+    {
+        "label": "PRICES",
+        "importPath": "bot.config.values",
+        "description": "bot.config.values",
+        "isExtraImport": true,
+        "detail": "bot.config.values",
         "documentation": {}
     },
     {
@@ -338,11 +372,110 @@
         "documentation": {}
     },
     {
+        "label": "SVG_SIZE",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "SVG_SIZE = 1200\nN = 16\nTN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "N = 16\nTN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TN",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "TN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "WIDTH",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "WIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "SCALE_Y",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "SCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "HEIGHT",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "HEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TRIANGLE_WIDTH",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "TRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "TRIANGLE_HEIGHT",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "TRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "INITIAL_ANGLE",
+        "kind": 5,
+        "importPath": "bot.config.render.sizes",
+        "description": "bot.config.render.sizes",
+        "peekOfCode": "INITIAL_ANGLE = pi/2",
+        "detail": "bot.config.render.sizes",
+        "documentation": {}
+    },
+    {
+        "label": "COLORS",
+        "kind": 5,
+        "importPath": "bot.config.render.values",
+        "description": "bot.config.render.values",
+        "peekOfCode": "COLORS = {\n  0: {\n    'color': 'black',\n    'desc': \"Мандала не смогла определить. Вы являетесь настоящей загадкой для вселенной\",\n  },\n  1: {\n    'color': \"#CE1719\",\n    'desc': \"Динамизм, подвижность, хорошая карма, сострадательность, отзывчивость, любовь, радость и богатство. Вы способны на агрессию и обладание властью\",\n  },\n  2: {",
+        "detail": "bot.config.render.values",
+        "documentation": {}
+    },
+    {
+        "label": "DATE_ERROR",
+        "kind": 5,
+        "importPath": "bot.config.botMessages",
+        "description": "bot.config.botMessages",
+        "peekOfCode": "DATE_ERROR = \"\"\"\nНекорректный ввод даты. Пример ввода даты: 26031969\n(Число, Месяц и Год без разделительных знаков)\"\"\"",
+        "detail": "bot.config.botMessages",
+        "documentation": {}
+    },
+    {
         "label": "Page",
         "kind": 6,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "class Page:\n    reply_markup = None\n    def __init__(self, link, text, photo_file_id = None) -> None:\n        self.link = link\n        self.photo_file_id = photo_file_id\n        self.text = text\n    def get_text(self, message):\n        if isinstance(self.text, str):\n            return self.text\n        return self.text(message)",
+        "peekOfCode": "class Page:\n    reply_markup = None\n    def __init__(self, link, text, photo_file_id = None, photo_file_ids = None) -> None:\n        self.link = link\n        self.photo_file_id = photo_file_id\n        self.photo_file_ids = photo_file_ids\n        self.text = text\n    def get_text(self, message):\n        if isinstance(self.text, str):\n            return self.text",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -351,7 +484,7 @@
         "kind": 2,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "def GREETINGS(message: types.Message):\n    return f'Привет {message.from_user.full_name}! Введи свою дату рождения без разделительных знаков, чтобы получить мандалу! Пример даты: 28042004'\nSTART_PAGE = Page(link='start', text=GREETINGS)\nINSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 ",
+        "peekOfCode": "def GREETINGS(message: types.Message):\n    return f\"\"\"\nЗдравствуйте, {message.from_user.full_name}!\nВ этом боте вы можете:\n1⃣ Сделать свою мандалу по дате рождения самостоятельно\n2⃣ Приобрести мандалу\n3⃣ Посмотреть примеры готовых мандал\nДля навигации используйте меню\n\"\"\"\nSTART_PAGE = Page(",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -360,7 +493,16 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "START_PAGE = Page(link='start', text=GREETINGS)\nINSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                ",
+        "peekOfCode": "START_PAGE = Page(\n    link='start', \n    text=GREETINGS,\n    photo_file_id='AgACAgIAAxkDAAIBOmTMkRV9e6eYqnBfwolPOkLOrfMjAAJ0xzEbmbtBSpfb019kAAGBdAEAAwIAA3MAAy8E'\n)\nEXAMPLES_PAGE = Page(\n    link='ex_page',\n    text='Примеры готовых мандал',\n    photo_file_ids=[\n        'AgACAgIAAxkDAAIBVWTMl4vXuhVU0GmcwHECQ81P01tzAAJN0TEb5RlgSgV-sltK2xWIAQADAgADcwADLwQ',",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "EXAMPLES_PAGE",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "EXAMPLES_PAGE = Page(\n    link='ex_page',\n    text='Примеры готовых мандал',\n    photo_file_ids=[\n        'AgACAgIAAxkDAAIBVWTMl4vXuhVU0GmcwHECQ81P01tzAAJN0TEb5RlgSgV-sltK2xWIAQADAgADcwADLwQ',\n        'AgACAgIAAxkDAAIBWWTMl7wb5Xgvfl8X9JZiknmstH7QAAJO0TEb5RlgSqL5B7Y3t17aAQADAgADcwADLwQ',\n        'AgACAgIAAxkDAAIBXWTMl-bx1OZC9Hjcw9v08U-jQbJ_AAJQ0TEb5RlgSlyr3LNGlaTBAQADAgADcwADLwQ'\n    ]\n)\nINSTRUCTION_PAGE_1 = Page(",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -369,7 +511,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_1 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                \n2 6 0 3 1 9 6 9 9 6 9 1 3 0 6 2.",
+        "peekOfCode": "INSTRUCTION_PAGE_1 = Page(\n    link='inst_page_3',\n    text='Распечатайте чистую мандалу, которую в дальнейшем будете закрашивать. Для удобства можете скачать её у нас.',\n    photo_file_id='AgACAgIAAxkBAAIBHWTMiLNMuguWJIAGPH5WuN_72bNSAAPRMRvlGWBKikQu6xuHZzABAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_2 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -378,7 +520,7 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_2 = Page(\n    link='inst_page_2',\n    text='Результат заполнения',\n    photo_file_id='AgACAgIAAxkBAAPsZMlV_8rCsTwlOTv2g5GMjppF3qwAAn7SMRsi-EhKROw5vmEK1kQBAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_3 = Page(\n    link='inst_page_3',\n    text='Распечатайте шаблон мандалы для последующей раскраски',\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})",
+        "peekOfCode": "INSTRUCTION_PAGE_2 = Page(\n    link='inst_page_1', \n    text= \n\"\"\"\n1⃣ Запишите свою дату рождения, например, 26.03.1969 в виде 26031969.\n2⃣ Зеркально отразите и допишите этот ряд цифр в конце исходного. В нашем примере получится следующее: \n26031969 96913062 \n(должно быть 16 знаков).\n3⃣ Для удобства цифры можно разделить пробелами:                \n2 6 0 3 1 9 6 9 9 6 9 1 3 0 6 2.",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -387,7 +529,34 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "INSTRUCTION_PAGE_3 = Page(\n    link='inst_page_3',\n    text='Распечатайте шаблон мандалы для последующей раскраски',\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})\nINSTRUCTION_PAGE_2.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_1.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_3.link}})\nINSTRUCTION_PAGE_3.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_2.link}})\nLINKS = {\n    START_PAGE.link: START_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,",
+        "peekOfCode": "INSTRUCTION_PAGE_3 = Page(\n    link='inst_page_2',\n    text='Результат заполнения',\n    photo_file_id='AgACAgIAAxkBAAPsZMlV_8rCsTwlOTv2g5GMjppF3qwAAn7SMRsi-EhKROw5vmEK1kQBAAMCAANzAAMvBA'\n)\nINSTRUCTION_PAGE_4 = Page(\n    link='inst_page_4',\n    text=\n\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_4",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_4 = Page(\n    link='inst_page_4',\n    text=\n\"\"\"\nКаждая цифра в полученном при расчетах треугольнике соответствует определенному цвету.\nЗакрасьте именно такими цветами каждую ячейку в треугольном сегменте мандалы (сегментов 6 и они одинаковые). \nВ нашем случае последовательность 2603196996913062 будет соответствовать внешней стороне шестиугольника, а цифра 4 будет находиться в самой серединке.\n\"\"\",\nphoto_file_id='AgACAgIAAxkBAAIBImTMiwXUNZZhh4LgQxO2TAZwg_EnAAII0TEb5RlgSiJd_MS2dL2tAQADAgADcwADLwQ'\n)",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_5",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_5 = Page(\n    link='inst_page_5',\n    text='Закрашенный сегмент (всего 6)',\n    photo_file_id='AgACAgIAAxkBAAIB12TM4BwvipUY1DlYGF6ktKTufEMYAAJMzDEbLllpSsvU-angI0VuAQADAgADcwADLwQ'\n)\nINSTRUCTION_PAGE_6 = Page(\n    link='inst_page_6',\n    text='Готовая мандала',\n    photo_file_id='AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ'\n)",
+        "detail": "bot.config.pages",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUCTION_PAGE_6",
+        "kind": 5,
+        "importPath": "bot.config.pages",
+        "description": "bot.config.pages",
+        "peekOfCode": "INSTRUCTION_PAGE_6 = Page(\n    link='inst_page_6',\n    text='Готовая мандала',\n    photo_file_id='AgACAgIAAxkDAAIBpGTM2YIox26WXIn-io2MowQDhuFiAAJW0TEb5RlgSlphTvygGnjLAQADAgADcwADLwQ'\n)\nINSTRUCTION_PAGE_1.set_reply_markup({'Далее': {'callback_data': INSTRUCTION_PAGE_2.link}})\nINSTRUCTION_PAGE_2.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_1.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_3.link}})\nINSTRUCTION_PAGE_3.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_2.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_4.link}})\nINSTRUCTION_PAGE_4.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_3.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_5.link}})\nINSTRUCTION_PAGE_5.set_reply_markup({'Назад': {'callback_data': INSTRUCTION_PAGE_4.link}, 'Далее': {'callback_data': INSTRUCTION_PAGE_6.link}})",
         "detail": "bot.config.pages",
         "documentation": {}
     },
@@ -396,97 +565,16 @@
         "kind": 5,
         "importPath": "bot.config.pages",
         "description": "bot.config.pages",
-        "peekOfCode": "LINKS = {\n    START_PAGE.link: START_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,\n    INSTRUCTION_PAGE_2.link: INSTRUCTION_PAGE_2,\n    INSTRUCTION_PAGE_3.link: INSTRUCTION_PAGE_3\n}",
+        "peekOfCode": "LINKS = {\n    START_PAGE.link: START_PAGE,\n    EXAMPLES_PAGE.link: EXAMPLES_PAGE,\n    INSTRUCTION_PAGE_1.link: INSTRUCTION_PAGE_1,\n    INSTRUCTION_PAGE_2.link: INSTRUCTION_PAGE_2,\n    INSTRUCTION_PAGE_3.link: INSTRUCTION_PAGE_3,\n    INSTRUCTION_PAGE_4.link: INSTRUCTION_PAGE_4,\n    INSTRUCTION_PAGE_5.link: INSTRUCTION_PAGE_5,\n    INSTRUCTION_PAGE_6.link: INSTRUCTION_PAGE_6\n}",
         "detail": "bot.config.pages",
         "documentation": {}
     },
     {
-        "label": "SVG_SIZE",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "SVG_SIZE = 1200\nN = 16\nTN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "N",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "N = 16\nTN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "TN",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "TN = 6\nWIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "WIDTH",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "WIDTH = (SVG_SIZE*0.9)/2/N\nSCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "SCALE_Y",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "SCALE_Y = sqrt(0.75)*2\nHEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "HEIGHT",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "HEIGHT = WIDTH*SCALE_Y\nTRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "TRIANGLE_WIDTH",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "TRIANGLE_WIDTH = WIDTH * N\nTRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "TRIANGLE_HEIGHT",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "TRIANGLE_HEIGHT = (HEIGHT * (N+1)) / 2\nINITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "INITIAL_ANGLE",
-        "kind": 5,
-        "importPath": "bot.config.sizes",
-        "description": "bot.config.sizes",
-        "peekOfCode": "INITIAL_ANGLE = pi/2",
-        "detail": "bot.config.sizes",
-        "documentation": {}
-    },
-    {
-        "label": "COLORS",
+        "label": "PRICES",
         "kind": 5,
         "importPath": "bot.config.values",
         "description": "bot.config.values",
-        "peekOfCode": "COLORS = {\n  0: {\n    'color': 'black',\n    'desc': \"Мандала не смогла определить. Вы являетесь настоящей загадкой для вселенной\",\n  },\n  1: {\n    'color': \"#CE1719\",\n    'desc': \"Динамизм, подвижность, хорошая карма, сострадательность, отзывчивость, любовь, радость и богатство. Вы способны на агрессию и обладание властью\",\n  },\n  2: {",
+        "peekOfCode": "PRICES = [types.LabeledPrice('Мандала', 5000), types.LabeledPrice('Мандала с описанием', 15000)]",
         "detail": "bot.config.values",
         "documentation": {}
     },
@@ -549,7 +637,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\n    else:",
+        "peekOfCode": "def index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(\n            chat_id,",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -558,7 +646,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\n    else:\n        bot.send_message(chat_id, page.get_text(message), 'html', reply_markup=page.reply_markup)\ndef edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(types.InputMediaPhoto(page.photo_file_id, page.get_text(message), 'html'), chat_id, message.id, reply_markup=page.reply_markup)",
+        "peekOfCode": "def send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(\n            chat_id,\n            page.photo_file_id,\n            page.get_text(message),\n            \"html\",\n            reply_markup=page.reply_markup,\n        )",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -567,7 +655,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(types.InputMediaPhoto(page.photo_file_id, page.get_text(message), 'html'), chat_id, message.id, reply_markup=page.reply_markup)\n    else:\n        bot.edit_message_text(page.get_text(message), chat_id, message.id, reply_markup=page.reply_markup)\n@bot.message_handler(commands=['getFileID'])\ndef get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=['start'])",
+        "peekOfCode": "def edit_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.edit_message_media(\n            types.InputMediaPhoto(page.photo_file_id, page.get_text(message), \"html\"),\n            chat_id,\n            message.id,\n            reply_markup=page.reply_markup,\n        )\n    else:",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -576,7 +664,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=['start'])\ndef start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=['instruction'])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):",
+        "peekOfCode": "def get_file_id(message: types.Message):\n    bot.send_message(message.chat.id, message.reply_to_message.photo[0].file_id)\n@bot.message_handler(commands=[\"start\"])\ndef start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=[\"examples\"])\ndef examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -585,7 +673,16 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=['instruction'])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)",
+        "peekOfCode": "def start(message: types.Message):\n    send_page(START_PAGE, message)\n@bot.message_handler(commands=[\"examples\"])\ndef examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "examples",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def examples(message: types.Message):\n    send_page(EXAMPLES_PAGE, message)\n@bot.message_handler(commands=[\"instruction\"])\ndef instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):\n#     bot.send_invoice(message.chat.id, title='Working Time Machine',\n#                      provider_token=settings.PAYMENTS_TOKEN,\n#                      currency='rub',                     ",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -594,7 +691,7 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)    \n@bot.callback_query_handler(lambda q: True)\ndef handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n# @bot.message_handler()\n# def mandala(message: types.Message):\n#     chat_id = message.chat.id",
+        "peekOfCode": "def instruction(message: types.Message):\n    send_page(INSTRUCTION_PAGE_1, message)\n# @bot.message_handler(commands=['buy'])\n# def buy(message: types.Message):\n#     bot.send_invoice(message.chat.id, title='Working Time Machine',\n#                      provider_token=settings.PAYMENTS_TOKEN,\n#                      currency='rub',                     \n#                      need_shipping_address=False,\n#                      need_name=False,\n#                      need_phone_number=False,",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -603,7 +700,16 @@
         "kind": 2,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "def handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n# @bot.message_handler()\n# def mandala(message: types.Message):\n#     chat_id = message.chat.id\n#     dateString = message.text\n#     validator = r'^\\d\\d[.]\\d\\d[.]\\d\\d\\d\\d$'\n#     is_match = bool(re.fullmatch(validator, dateString))",
+        "peekOfCode": "def handle_callback(query: types.CallbackQuery):\n    link = query.data\n    message = query.message\n    edit_page(LINKS[link], message)\n@bot.message_handler()\ndef mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r\"^\\d\\d\\d\\d\\d\\d\\d\\d$\"\n    is_match = bool(re.fullmatch(validator, dateString))",
+        "detail": "bot.views",
+        "documentation": {}
+    },
+    {
+        "label": "mandala",
+        "kind": 2,
+        "importPath": "bot.views",
+        "description": "bot.views",
+        "peekOfCode": "def mandala(message: types.Message):\n    chat_id = message.chat.id\n    dateString = message.text\n    validator = r\"^\\d\\d\\d\\d\\d\\d\\d\\d$\"\n    is_match = bool(re.fullmatch(validator, dateString))\n    is_valid = False\n    if is_match:\n        day = int(dateString[:2])\n        month = int(dateString[2:4])\n        year = int(dateString[4:])",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -612,7 +718,7 @@
         "kind": 5,
         "importPath": "bot.views",
         "description": "bot.views",
-        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode('utf-8'))\n        bot.process_new_updates([update])\n    return HttpResponse('<h1>Ты подключился!</h1>')\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(chat_id, page.photo_file_id, page.get_text(message), 'html', reply_markup=page.reply_markup)",
+        "peekOfCode": "bot = TeleBot(settings.BOT_TOKEN)\ndef index(request):\n    if request.method == \"POST\":\n        update = types.Update.de_json(request.body.decode(\"utf-8\"))\n        bot.process_new_updates([update])\n    return HttpResponse(\"<h1>Ты подключился!</h1>\")\ndef send_page(page: Page, message: types.Message):\n    chat_id = message.chat.id\n    if page.photo_file_id:\n        bot.send_photo(",
         "detail": "bot.views",
         "documentation": {}
     },
@@ -765,7 +871,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "SECRET_KEY = '!9blz2wf6x5(ofuwzyoau0zjllc)h@9k*s#m5x2$gmba*%vrv&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -774,7 +880,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "DEBUG = True\nBOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -783,7 +889,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "BOT_TOKEN = '6106100658:AAF8WkJ5p02tw12i-AbeVZdjOcHnV3ETFfI'\nPAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -792,7 +898,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "PAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "PAYMENTS_TOKEN = '401643678:TEST:9ce8302a-2dd8-47ce-90f4-31a6cd1e30f8'\nALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
@@ -801,7 +907,7 @@
         "kind": 5,
         "importPath": "mandalaBackend.settingsProd",
         "description": "mandalaBackend.settingsProd",
-        "peekOfCode": "ALLOWED_HOSTS = ['b6fb-85-174-203-3.ngrok-free.app', '127.0.0.1']",
+        "peekOfCode": "ALLOWED_HOSTS = ['d0b0-85-174-203-3.ngrok-free.app', '127.0.0.1']",
         "detail": "mandalaBackend.settingsProd",
         "documentation": {}
     },
